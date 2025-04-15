@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes pulse {
+  25% { transform: scale(1.1); }
+  75% { transform: scale(0.9); }
+}
+
+@keyframes pulse-grow {
+  to { transform: scale(1.1); }
+}
+
+@keyframes pulse-shrink {
+  to { transform: scale(0.9); }
+}
+
+@keyframes push {
+  50% { transform: scale(0.8); }
+  100% { transform: scale(1); }
+}
+
+@keyframes pop {
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes wobble-vertical {
+  16.65% { transform: translateY(8px); }
+  33.3% { transform: translateY(-6px); }
+  49.95% { transform: translateY(4px); }
+  66.6% { transform: translateY(-2px); }
+  83.25% { transform: translateY(1px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes wobble-horizontal {
+  16.65% { transform: translateX(8px); }
+  33.3% { transform: translateX(-6px); }
+  49.95% { transform: translateX(4px); }
+  66.6% { transform: translateX(-2px); }
+  83.25% { transform: translateX(1px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes hover {
+  50% { transform: translateY(-3px); }
+  100% { transform: translateY(-6px); }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #0a0a0a;
+    --color-foreground: #ededed;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: var(--color-background);
+}
+
+/* Clean gradient background */
+.gradient-bg {
+  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+  position: relative;
+}
+
+/* Subtle texture overlay */
+.gradient-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at center, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
+  opacity: 0.6;
+  pointer-events: none;
+}
