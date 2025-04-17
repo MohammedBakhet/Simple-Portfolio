@@ -350,9 +350,9 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-8 flex flex-col min-h-[120px]">
             <div className="flex justify-between items-start">
               <div className="absolute left-1/2 -translate-x-1/2">
-                <div className="flex flex-col items-center gap-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                <div className="flex flex-col items-center gap-1 md:gap-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   <svg
-                    className="w-4 h-4 text-purple-600"
+                    className="w-3 h-3 md:w-4 md:h-4 text-purple-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -365,7 +365,7 @@ export default function HomePage() {
                       d="M5 10l7-7m0 0l7 7m-7-7v18"
                     />
                   </svg>
-                  <span className="text-sm tracking-[0.2em] uppercase font-medium text-purple-600">Back to top</span>
+                  <span className="text-xs md:text-sm tracking-[0.2em] uppercase font-medium text-purple-600">Back to top</span>
                 </div>
               </div>
 
@@ -374,31 +374,31 @@ export default function HomePage() {
                   href="https://github.com/MohammedBakhet"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-white rounded-full border-2 border-white flex items-center justify-center relative overflow-hidden group"
+                  className="w-8 h-8 md:w-12 md:h-12 bg-white rounded-full border-2 border-white flex items-center justify-center relative overflow-hidden group"
                 >
-                  <FaGithub className="w-6 h-6 text-[#262626] relative z-10 transition-all duration-500 group-hover:text-white group-hover:rotate-[360deg]" />
+                  <FaGithub className="w-4 h-4 md:w-6 md:h-6 text-[#262626] relative z-10 transition-all duration-500 group-hover:text-white group-hover:rotate-[360deg]" />
                   <div className="absolute top-full left-0 w-full h-full bg-[#262626] transition-all duration-500 group-hover:top-0 z-0" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/mohammed-bakhet-5461412a9/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-white rounded-full border-2 border-white flex items-center justify-center relative overflow-hidden group"
+                  className="w-8 h-8 md:w-12 md:h-12 bg-white rounded-full border-2 border-white flex items-center justify-center relative overflow-hidden group"
                 >
-                  <FaLinkedin className="w-6 h-6 text-[#262626] relative z-10 transition-all duration-500 group-hover:text-white group-hover:rotate-[360deg]" />
+                  <FaLinkedin className="w-4 h-4 md:w-6 md:h-6 text-[#262626] relative z-10 transition-all duration-500 group-hover:text-white group-hover:rotate-[360deg]" />
                   <div className="absolute top-full left-0 w-full h-full bg-[#0077b5] transition-all duration-500 group-hover:top-0 z-0" />
                 </a>
                 <a
                   href="mailto:Mohammed.bakhet011@gmail.com"
-                  className="w-12 h-12 bg-white rounded-full border-2 border-white flex items-center justify-center relative overflow-hidden group"
+                  className="w-8 h-8 md:w-12 md:h-12 bg-white rounded-full border-2 border-white flex items-center justify-center relative overflow-hidden group"
                 >
-                  <FaEnvelope className="w-6 h-6 text-[#262626] relative z-10 transition-all duration-500 group-hover:text-white group-hover:rotate-[360deg]" />
+                  <FaEnvelope className="w-4 h-4 md:w-6 md:h-6 text-[#262626] relative z-10 transition-all duration-500 group-hover:text-white group-hover:rotate-[360deg]" />
                   <div className="absolute top-full left-0 w-full h-full bg-purple-600 transition-all duration-500 group-hover:top-0 z-0" />
                 </a>
               </div>
             </div>
             
-            <p className="text-gray-600 text-sm md:text-base absolute bottom-8 left-8">
+            <p className="text-gray-600 text-xs md:text-sm mt-8 md:absolute md:bottom-8 md:left-8">
               © 2025 Mohammed Bakhet. All rights reserved.
             </p>
           </div>
