@@ -365,7 +365,7 @@ export default function HomePage() {
                       d="M5 10l7-7m0 0l7 7m-7-7v18"
                     />
                   </svg>
-                  <span className="text-xs md:text-sm tracking-[0.2em] uppercase font-medium text-purple-600">Back to top</span>
+                  <span className="hidden md:inline text-sm tracking-[0.2em] uppercase font-medium text-purple-600">Back to top</span>
                 </div>
               </div>
 
