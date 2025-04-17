@@ -13,16 +13,16 @@ const robotoMono = Roboto_Mono({
 
 export const metadata = {
   metadataBase: new URL('https://mohammedbakhet.com'),
-  title: "Mohammed Bakhet | Full-Stack Developer",
-  description: "Portfolio of Mohammed Bakhet, a Full-Stack Developer specializing in modern web technologies. Check out my projects and skills.",
-  keywords: ["Full-Stack Developer", "Web Development", "Portfolio", "React", "Next.js", "TypeScript"],
+  title: "Mohammed Bakhet | Full-Stack Developer Portfolio",
+  description: "A simple portfolio showcasing Mohammed Bakhet's work as a Full-Stack Developer specializing in modern web technologies.",
+  keywords: ["Full-Stack Developer", "Web Development", "Portfolio", "React", "Next.js", "TypeScript", "Simple Portfolio"],
   authors: [{ name: "Mohammed Bakhet" }],
   openGraph: {
-    title: "Mohammed Bakhet | Full-Stack Developer",
-    description: "Portfolio of Mohammed Bakhet, a Full-Stack Developer specializing in modern web technologies.",
+    title: "Mohammed Bakhet | Simple Developer Portfolio",
+    description: "A simple portfolio of Mohammed Bakhet, a Full-Stack Developer specializing in modern web technologies.",
     type: "website",
     locale: "en_US",
-    siteName: "Mohammed Bakhet Portfolio",
+    siteName: "Simple Developer Portfolio",
     images: [
       {
         url: '/images/profile.png',
@@ -34,8 +34,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Mohammed Bakhet | Full-Stack Developer",
-    description: "Portfolio of Mohammed Bakhet, a Full-Stack Developer specializing in modern web technologies.",
+    title: "Mohammed Bakhet | Simple Developer Portfolio",
+    description: "A simple portfolio of Mohammed Bakhet, a Full-Stack Developer specializing in modern web technologies.",
     images: ['/images/profile.png'],
   },
 };

@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import { Typewriter } from 'react-simple-typewriter';
+import { motion } from 'framer-motion';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -107,7 +109,14 @@ export default function ContactForm() {
           className="px-12 py-3 border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white transition-colors duration-300 font-medium tracking-wider"
         >
           {status === 'sending' ? (
-            'SENDING...'
+            <div className="flex items-center space-x-2">
+              <motion.div
+                className="h-5 w-5 border-2 border-white border-t-transparent rounded-full"
+                animate={{ rotate: 360 }}
+                transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+              />
+              <span>SENDING...</span>
+            </div>
           ) : (
             'SUBMIT'
           )}
@@ -115,7 +124,15 @@ export default function ContactForm() {
       </div>
 
       {status === 'success' && (
-        <p className="text-green-600 text-center font-medium">Message sent successfully!</p>
+        <div className="text-purple-600 text-center font-medium">
+          <Typewriter
+            words={['Message sent successfully!']}
+            cursor
+            cursorStyle="|"
+            typeSpeed={70}
+            delaySpeed={1000}
+          />
+        </div>
       )}
       {status === 'error' && (
         <p className="text-red-600 text-center font-medium">Failed to send message. Please try again.</p>

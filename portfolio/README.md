@@ -49,8 +49,8 @@ This project is ready to be deployed on Vercel. Follow these steps:
 2. Go to [Vercel](https://vercel.com)
 3. Import your repository
 4. Configure your environment variables:
-   - `SMTP_EMAIL`
-   - `SMTP_PASSWORD`
+   - `EMAIL_USER`
+   - `EMAIL_PASS`
 5. Deploy!
 
 ## Environment Variables
@@ -58,8 +58,8 @@ This project is ready to be deployed on Vercel. Follow these steps:
 Create a `.env.local` file in the root directory with:
 
 ```env
-SMTP_EMAIL=your-email@gmail.com
-SMTP_PASSWORD=your-app-specific-password
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASS=your-app-specific-password
 ```
 
 ## Build
